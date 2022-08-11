@@ -1,0 +1,12 @@
+#timer {
+  width: 90px;
+  margin: 1em auto;
+  border: 3px solid #12212e;
+  border-radius: 7px;
+  padding: 1em;
+  background-color: #213547;
+}
+
+#timer > strong {
+  color: white;
+}
