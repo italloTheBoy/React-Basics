@@ -3,29 +3,28 @@ import "./Name.css"
 
 export function Name() {
   const [name, setName] = useState("Mundo")
-
-  function handleChange(e) {
-    let name = e.target.value.length === 0 
+  
+  const handleChange = (e) => {
+    let name = e.target.value.trim() === "" 
       ? "Mundo" 
-      : e.target.value
+      : e.target.value.trim().toLowerCase()
 
-    if (name.length  === 0) {
-      name = "Mundo"
-    }
-    
     return setName(name)
   }
 
   return (
     <section className="container">
-      <h1>Olá <span id="name">{name}</span>!!!</h1>
+      {name === "itallo"
+        ? <h1>Seja bem vindo criador!</h1>
+        : <h1>Olá <span id="name">{name}</span>!!!</h1>
+      }
 
       <input 
-        className="input"
         type="text" 
+        className="input"
         placeholder="Insira um nome" 
-        autoFocus={true} 
-        onChange={(e) => handleChange(e)} 
+        autoFocus
+        onChange={handleChange} 
       />
     </section>
   )
