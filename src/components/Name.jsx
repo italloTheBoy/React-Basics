@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import "./Name.css"
 
 export function Name() {
+
   const [name, setName] = useState("Mundo")
   
   const handleChange = (e) => {
@@ -28,5 +29,4 @@ export function Name() {
       />
     </section>
   )
-
 }
