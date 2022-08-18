@@ -1,0 +1,34 @@
+.form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  border: 3px solid black;
+  border-radius: 7px;
+  padding: .7em 1em ;
+  background-color: #213547;
+
+}
+
+.form-label {
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-select {
+  margin: 0 0 1em 0;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  border: 3px;
+  border-radius: 4px;
+  padding: .2em 0;
+  font-weight: 600;
+}
+
+.form-button {
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  margin-top: .8em;
+  border-radius: 4px;
+  border: 3px;
+  font-weight: bold;
+}
